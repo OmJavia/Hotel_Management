@@ -1,0 +1,82 @@
+/* FeedbackReviews.css */
+
+/* Ensure the container has some padding and is centered */
+.feedback-reviews-container {
+    padding: 15px;
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Center the heading and give it some margin */
+  .feedback-reviews-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333; /* Ensure the text color is not white or transparent */
+  }
+  
+  /* Style the feedback card */
+  .feedback-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #333; /* Ensure the text color is not white or transparent */
+  }
+  
+  /* Add some hover effects to the feedback card */
+  .feedback-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the reviews card */
+  .reviews-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #333; /* Ensure the text color is not white or transparent */
+  }
+  
+  /* Add some hover effects to the reviews card */
+  .reviews-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the review text */
+  .review-text {
+    margin-bottom: 10px;
+    color: #555; /* Ensure the text color is not white or transparent */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .feedback-reviews-container {
+      padding: 10px;
+    }
+  
+    .feedback-card, .reviews-card {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .feedback-reviews-container {
+      padding: 15px;
+    }
+  
+    .feedback-card, .reviews-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .feedback-reviews-container {
+      padding: 20px;
+    }
+  
+    .feedback-card, .reviews-card {
+      margin-bottom: 25px;
+    }
+  }
+  

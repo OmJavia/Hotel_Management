@@ -1,0 +1,197 @@
+.dashboard {
+    /* background: url('https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/05/24095758/AAG_66605233-H1-TBK_Poolside_13503__CMYK-3x2.jpg') no-repeat center center fixed; */
+    background-color: #ffffff;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding: 20px 50px;
+}
+
+.dashboard h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dashboard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+/* @keyframes colorChange {
+    0% { background-color: #007bff; }
+    25% { background-color: #28a745; }
+    50% { background-color: #ffc107; }
+    75% { background-color: #dc3545; }
+    100% { background-color: #007bff; }
+} */
+
+.card-overview, .card-recent-activities, .card-statistics, .card-quick-links {
+    color: white;
+    /* animation: colorChange 8s infinite;  */
+}
+
+/* .card-overview {
+    animation-delay: 0s;
+}
+
+.card-recent-activities {
+    animation-delay: 2s;
+}
+
+.card-statistics {
+    animation-delay: 4s;
+}
+
+.card-quick-links {
+    animation-delay: 6s;
+} */
+
+/* @keyframes buttonHover {
+    0% { background-color: #a630bb; }
+    50% { background-color: #b12e2e; } 
+    100% { background-color: #50c8b4; }
+} */
+
+/* .dashboard .btn-primary {
+    transition: background-color 0.3s;
+    animation: buttonHover 5s infinite;
+} */
+
+.dashboard .btn-primary:hover {
+    background-color: #055ab4;
+}
+
+.sidebar-toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.95);
+}
+
+.offcanvas-start {
+    width: 200px; 
+    background-color: #343a40;
+    padding: 0; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.offcanvas-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+
+.offcanvas-body .nav-link {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #495057; 
+}
+
+
+.offcanvas-body .nav-link:hover {
+    background-color: #495057;
+    color: white;
+}
+
+
+.profile-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    height: 40px;
+}
+
+.profile-menu {
+    right: 0; 
+}
+
+@media (max-width: 992px) {
+    .offcanvas-start {
+        width: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .offcanvas-start {
+        width: 100%;
+    }
+    
+    .navbar-custom {
+        padding: 10px;
+    }
+
+    .profile-icon {
+        height: 30px; 
+    }
+    
+    .sidebar-toggle {
+        font-size: 20px;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+}
+
+.dashboard h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.dashboard .card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+.dashboard .card:hover {
+    transform: scale(1.05); 
+}
+
+.dashboard .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.dashboard .card-text {
+    margin-bottom: 1rem;
+}
+
+.card-overview {
+    background-color: #414447;
+}
+
+.card-recent-activities {
+    background-color: #cf5cc4;
+}
+
+.card-statistics {
+    background-color: #e2c05a;
+}
+
+.card-quick-links {
+    background-color: #c2545f;
+}

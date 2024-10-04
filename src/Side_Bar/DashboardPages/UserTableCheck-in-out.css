@@ -1,0 +1,32 @@
+.user-table {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    border: 2px;
+  }
+  
+  .user-table th, .user-table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 767.98px) {
+    .user-table th, .user-table td {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .user-table th, .user-table td {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .user-table th, .user-table td {
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
+  

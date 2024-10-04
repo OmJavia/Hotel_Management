@@ -1,0 +1,68 @@
+.enquiry-page-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.enquiry-page-title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+
+.enquiry-page-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.enquiry-page-form-group {
+  margin-bottom: 15px;
+}
+
+.enquiry-page-form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.enquiry-page-form-group .form-control {
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.enquiry-page-submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enquiry-page-submit-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .enquiry-page-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .enquiry-page-form-group {
+    margin-bottom: 20px;
+  }
+
+  .enquiry-page-form {
+    padding: 10px;
+  }
+}

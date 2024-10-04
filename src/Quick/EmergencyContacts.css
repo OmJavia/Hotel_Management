@@ -1,0 +1,66 @@
+.emergency-contacts-container {
+    padding: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.emergency-contacts-container col{
+    text-align: center;
+}
+
+.emergency-contacts-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333; }
+  
+.contact-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #333;
+}
+  
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+.contact-card .card-title {
+    color: #333;
+}
+  
+.contact-card .card-text {
+    color: #555;
+}
+  
+@media (max-width: 767px) {
+.emergency-contacts-container {
+    padding: 10px;
+}
+
+.contact-card {
+    margin-bottom: 15px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.emergency-contacts-container {
+    padding: 15px;
+}
+
+.contact-card {
+    margin-bottom: 20px;
+}
+}
+
+@media (min-width: 992px) {
+.emergency-contacts-container {
+    padding: 20px;
+}
+
+.contact-card {
+    margin-bottom: 25px;
+}
+}
+  

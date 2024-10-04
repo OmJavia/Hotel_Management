@@ -1,0 +1,99 @@
+.modal-content {
+    background-color: #f8f9fa;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 2rem;
+  }
+  
+  .chart-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 2rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .chart-container {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .chart-container {
+      height: 250px;
+    }
+  }
+  
+  .chartjs-render-monitor {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .chart-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+  
+  .chart-buttons button {
+    margin-left: 0.5rem;
+  }
+  
+  .year-selector {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .year-selector select {
+    width: 150px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  @keyframes buttonHover {
+    0% {
+      background-color: #007bff;
+    }
+    100% {
+      background-color: #0056b3;
+    }
+  }
+  
+  .chart-buttons button:hover {
+    animation: buttonHover 0.3s forwards;
+  }
+  

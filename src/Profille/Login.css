@@ -1,0 +1,102 @@
+/* .login-container {
+    display: flex;
+    height: 100vh;
+} */
+
+.login-image-carousel {
+    /* border: 4px solid blue; */
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.login-image-carousel .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.login-form {
+    /* border: 4px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.login-heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.login-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.login-option-button,
+.staff-option-button {
+    width: 90px;
+    margin: 0 10px;
+}
+
+.login-option-button.active {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.sign-up-option {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sign-up-option a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sign-up-option a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-image-carousel {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .login-form {
+        margin-left: 0;
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .login-form {
+        padding: 2%;
+    }
+}

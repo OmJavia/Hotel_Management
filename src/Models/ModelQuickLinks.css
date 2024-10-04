@@ -1,0 +1,26 @@
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .modal-footer .btn-secondary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .modal-footer .btn-secondary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  

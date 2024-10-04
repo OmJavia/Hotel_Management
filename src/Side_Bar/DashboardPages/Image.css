@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+
+.image-container {
+    width: 100%;
+    height: 100vh; 
+    background-image: url('https://th.bing.com/th/id/R.3a71dd593e4a991d6be2bc0e325a4265?rik=Ollt7vR%2bwqNmBg&riu=http%3a%2f%2foimfashion.com%2fwp-content%2fuploads%2f2018%2f02%2fexterior-shot-min.jpg&ehk=FhhDAs5oQsipZLD1M3oGvxBNK%2fKLYgWpOQOqkvu9duQ%3d&risl=&pid=ImgRaw&r=0'),
+                      url('https://th.bing.com/th/id/OIP.4AmrlSIq_iERpAgQFgBmoAHaEo?w=1504&h=940&rs=1&pid=ImgDetMain'),
+                      url('https://i.pinimg.com/originals/ce/20/03/ce20033dcf0eb52d50104ed74bf527fb.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 15s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative;  */
+}
+
+
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('https://th.bing.com/th/id/R.3a71dd593e4a991d6be2bc0e325a4265?rik=Ollt7vR%2bwqNmBg&riu=http%3a%2f%2foimfashion.com%2fwp-content%2fuploads%2f2018%2f02%2fexterior-shot-min.jpg&ehk=FhhDAs5oQsipZLD1M3oGvxBNK%2fKLYgWpOQOqkvu9duQ%3d&risl=&pid=ImgRaw&r=0');
+    }
+    33% {
+        background-image: url('https://th.bing.com/th/id/OIP.4AmrlSIq_iERpAgQFgBmoAHaEo?w=1504&h=940&rs=1&pid=ImgDetMain');
+    }
+    66% {
+        background-image: url('https://i.pinimg.com/originals/ce/20/03/ce20033dcf0eb52d50104ed74bf527fb.jpg');
+    }
+    100% {
+        background-image: url('https://th.bing.com/th/id/R.3a71dd593e4a991d6be2bc0e325a4265?rik=Ollt7vR%2bwqNmBg&riu=http%3a%2f%2foimfashion.com%2fwp-content%2fuploads%2f2018%2f02%2fexterior-shot-min.jpg&ehk=FhhDAs5oQsipZLD1M3oGvxBNK%2fKLYgWpOQOqkvu9duQ%3d&risl=&pid=ImgRaw&r=0'); /* Loop back to first image */
+    }
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 71, 71, 0.5); /* Transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-text {
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 100px;
+    padding: 0 20px;
+    background: -webkit-linear-gradient(317deg, rgba(0, 60, 255, 0.81) 0%, rgb(255 0 123) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .welcome-text {
+      font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-text {
+      font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,78 @@
+.booking-table-container {
+    padding: 20px;
+  }
+  
+  .booking-table-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .table {
+    margin-bottom: 0;
+  }
+  .pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-buttons .btn {
+    margin: 0 5px;
+  }
+  
+
+  /* const bookingsData = [
+    { 
+      name: 'Ajeet', 
+      contact: '1234567890', 
+      idProofName: 'Passport', 
+      idProofNo: 'A1234567', 
+      checkInTime: '2024-07-25 14:00', 
+      checkOutTime: '2024-07-27 10:00', 
+      date: '2024-07-25' 
+    },
+    { 
+      name: 'Akash', 
+      contact: '0987654321', 
+      idProofName: 'Driver\'s License', 
+      idProofNo: 'DL123456', 
+      checkInTime: '2024-07-24 12:00', 
+      checkOutTime: '2024-07-26 11:00', 
+      date: '2024-07-24' 
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Ajeet',
+    },
+    {
+        name: 'Akash',
+        contact: '23456789'
+    },
+    {
+        name: 'Ajeet',
+        contact: '123456789'
+    },
+  ]; */

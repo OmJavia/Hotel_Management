@@ -1,0 +1,23 @@
+.modal-header {
+    background-color: #343a40;
+    color: white;
+}
+
+.modal-body h4 {
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
+}
+
+@media (max-width: 576px) {
+    .modal-body h4 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+}

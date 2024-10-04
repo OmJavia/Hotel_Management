@@ -1,0 +1,113 @@
+.navbar-custom {
+    padding: 4px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030; 
+}
+
+.sidebar-toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.offcanvas-start {
+    width: auto !important; 
+    background-color: #343a40;
+    padding: 5px; 
+    transition: width 0.4s ease-in-out; 
+}
+
+.offcanvas-body {
+    padding: 20px 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.offcanvas-body .nav-link {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #495057; 
+}
+
+.offcanvas-body .nav-link:hover {
+    background-color: #495057;
+    color: white;
+}
+
+.dropdown-toggle img {
+    height: 30px;
+    width: 30px;
+}
+
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.profile-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    height: 30px;
+}
+
+.profile-menu {
+    right: 0; 
+}
+
+@media (max-width: 992px) {
+    .offcanvas-start {
+        width: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .offcanvas-start {
+        width: 100%;
+    }
+    
+    .navbar-custom {
+        padding: 10px;
+    }
+
+    .profile-icon {
+        height: 30px; 
+    }
+
+    .navbar-brand img {
+        height: 30px;
+    }
+    
+    .sidebar-toggle {
+        font-size: 20px; 
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 14px; 
+    }
+}

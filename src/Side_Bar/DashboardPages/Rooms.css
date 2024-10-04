@@ -1,0 +1,162 @@
+.rooms-dashboard {
+  position: relative;
+  min-height: 100vh;
+  padding: auto;
+}
+
+.rooms-dashboard h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.3s ease-in-out, background-color 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.card-count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.card-total-rooms {
+  background-color: rgb(224, 168, 64);
+  animation: colorChange 8s infinite;
+}
+
+.card-booked-rooms {
+  background-color: #3d86e4;
+  animation: colorChange 8s infinite 2s;
+}
+
+.card-available-rooms {
+  background-color: #51cb6e;
+  animation: colorChange 8s infinite 4s;
+}
+
+/* @keyframes colorChange {
+  0% { background-color: #007bff; }
+  25% { background-color: #dc3545; }
+  50% { background-color: #28a745; }
+  75% { background-color: #ffc107; }
+  100% { background-color: #007bff; }
+} */
+
+@media (max-width: 768px) {
+  .card-count {
+    font-size: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+}
+
+/* ============================Dropdown Filter section ==================================== */
+
+.filter-row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 1.5rem;
+}
+
+.dropdown-button {
+/* width: 100%; */
+display: flex;
+justify-content: center;
+margin-bottom: 1rem;
+}
+
+.dropdown-button .btn {
+width: 100%;
+text-align: left;
+border-radius: 5px;
+padding: 0.5rem 1rem;
+font-size: 1rem;
+}
+
+.dropdown-button .btn::after {
+display: inline-block;
+margin-left: 0.5rem;
+}
+
+.dropdown-menu {
+border-radius: 5px;
+}
+
+.dropdown-item {
+padding: 0.75rem 1rem;
+font-size: 0.875rem;
+}
+
+.dropdown-item:hover {
+background-color: #f8f9fa;
+}
+
+@media (max-width: 576px) {
+.filter-row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropdown-button {
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-button .btn {
+  font-size: 0.875rem;
+}
+}
+/* =========================== new css file =================== */
+
+.rooms-dashboard {
+padding: 20px;
+}
+
+.card-total-rooms,
+.card-booked-rooms,
+.card-available-rooms {
+text-align: center;
+}
+
+.card-count {
+font-size: 2rem;
+}
+
+.filter-row .dropdown-button {
+margin-bottom: 10px;
+}
+
+.small-room-card {
+cursor: pointer;
+width: 100%; 
+}
+
+@media (min-width: 576px) {
+.col-room-card {
+  flex: 0 0 12.5%; 
+  max-width: 12.5%;
+}
+}
+
+@media (max-width: 575.98px) {
+.col-room-card {
+  flex: 0 0 25%; 
+  max-width: 25%;
+}
+}
